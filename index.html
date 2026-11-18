@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wind Wave | Media Elements</title>
+<link rel="stylesheet" href="windwave-styles.css">
+</head>
+<body>
+<header>
+  <h1>Wind Wave</h1>
+  <p>Harnessing wind energy for smart cities</p>
+  <nav aria-label="Main">
+    <a href="index.html" aria-current="page">Media Elements</a>
+    <a href="windwave-application-form.html">Application Form</a>
+  </nav>
+</header>
+<main>
+  <div class="music">
+    <span>Play Music:</span>
+    <audio controls loop preload="none">
+      <source src="assets/windwave-ambient-wind.mp3" type="audio/mpeg">
+      <source src="assets/windwave-ambient-wind.ogg" type="audio/ogg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+
+  <img class="hero" src="assets/windwave-hero-banner.svg" alt="Wind turbines turning above a smart city skyline at dusk">
+
+  <div class="grid">
+    <section class="tile">
+      <h2>Project brief (PDF)</h2>
+      <iframe src="assets/windwave-project-brief.pdf" title="Wind Wave project brief PDF"></iframe>
+    </section>
+    <section class="tile">
+      <h2>How wind turbines work (YouTube)</h2>
+      <div id="ytBox"></div>
+    </section>
+    <section class="tile">
+      <h2>Wind Wave turbine demo (video)</h2>
+      <video controls preload="metadata" width="480" height="270" poster="assets/windwave-video-poster.jpg">
+        <source src="assets/windwave-turbine-demo.mp4" type="video/mp4">
+        <source src="assets/windwave-turbine-demo.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section class="tile">
+      <h2>Muppandal wind farm, Tamil Nadu (map)</h2>
+      <iframe src="https://www.google.com/maps?q=Muppandal+Wind+Farm,+Tamil+Nadu&amp;output=embed" title="Map of Muppandal wind farm" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </div>
+
+  <section class="about">
+    <h2>About the media on this page</h2>
+    <p>The audio tag plays MP3 and OGG files with controls and loop. The video tag plays MP4 and WebM files and uses a poster image, preload and size attributes. The source tag lists each file type so every browser can pick one it supports.</p>
+  </section>
+</main>
+<footer>&copy; 2026 Wind Wave. Harnessing wind energy for smart cities.</footer>
+<script src="windwave-script.js"></script>
+</body>
+</html>
